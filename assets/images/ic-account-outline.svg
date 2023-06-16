@@ -1,0 +1,11 @@
+<svg id="ic-account-outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_72" data-name="Group 72">
+    <rect id="Rectangle_26" data-name="Rectangle 26" width="24" height="24" fill="none"/>
+  </g>
+  <g id="Group_74" data-name="Group 74">
+    <g id="Group_73" data-name="Group 73">
+      <path id="Path_94" data-name="Path 94" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM7.35,18.5a7.957,7.957,0,0,1,9.3,0,7.957,7.957,0,0,1-9.3,0Zm10.79-1.38a9.951,9.951,0,0,0-12.28,0,8,8,0,1,1,12.28,0Z" fill="#fff"/>
+      <path id="Path_95" data-name="Path 95" d="M12,6a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,12,6Zm0,5a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,11Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

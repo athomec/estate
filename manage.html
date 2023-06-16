@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>不動產盤點及現況使用調查系統</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="不動產盤點及現況使用調查系統,不動產盤點,不動產盤點及現況使用,調查系統">
+    <meta name="description" content="不動產盤點及現況使用調查系統" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="image.png" />
+    <meta property="og:image" content="./assets/images/fb-img.png" />
+    <!--分享設定-->
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/css/smoothness/jquery-ui-1.10.0.custom.min.css" />
+    <!--iconfont設定-->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!--css設定-->
+</head>
+<!-- SCRIPTS -->
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src='assets/js/jquery-ui.js'></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/footable.js"></script>
+<script src="assets/js/script.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".js-draggable").draggable();
+    });
+</script>
+		<body class="bg-gray100">
+			<div class="wrapper">
+				<header>
+				<!--主選單開始-->
+<nav class="navbar navbar-expand-md fixed-top js-nav">
+    <div class="container-fluid">
+        <div class="d-flex flex-column flex-md-row w-100">
+            <a class="navbar-brand me-2" href="index.html">
+                <h1 class="mb-0"><img src="./assets/images/logo-header.svg" alt="台中管理處"></h1>
+            </a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-3 me-xxl-4">
+                    <img src="./assets/images/ic-account-outline.svg" alt="登入" class="me-1">
+                    <p>臺中管理處財務組OO股 王曉明</p>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">登出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--主選單結束-->
+				</header>
+                <!--內容開始-->
+				<div class="d-flex vh-100">
+				<!-----側邊選單開始----->
+<div class="side-menu js-side-menu" id="side-menu">
+    <button class="btn side-menu-toggler js-side-menu-toggler js-map-inside-toggler" type="button">
+        <img src="./assets/images/ic-chevron-left.svg" alt="導引列表icon">
+    </button>
+    <div class="side-menu-body scroll">
+        <div class="accordion" id="accordionGroup">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        <img src="./assets/images/ic-landcheck.svg" alt="土地盤點" class="accordion-icon me-2"> 土地盤點
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
+                            <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
+                            <li><a href="manage.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
+                            <li><a href="#" class="accordion-link">組合式報表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <img src="./assets/images/ic-buildcheck.svg" alt="建物盤點" class="me-2 me-md-3"> 建物盤點
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
+                            <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
+                            <li><a href="manage.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
+                            <li><a href="#" class="accordion-link">組合式報表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <img src="./assets/images/ic-nowcheck.svg" alt="現況調查" class="me-2 me-md-3"> 現況調查
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
+                            <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
+                            <li><a href="manage.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
+                            <li><a href="#" class="accordion-link">組合式報表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" onclick="window.location.href = 'map.html'">
+                        <img src="./assets/images/ic-map.svg" alt="地圖查詢" class="me-2 me-md-3"> 地圖查詢
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        <img src="./assets/images/ic-backstage.svg" alt="後台功能" class="me-2 me-md-3"> 後台功能
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
+                            <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
+                            <li><a href="manage.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
+                            <li><a href="#" class="accordion-link">組合式報表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----側邊選單結束----->
+				
+<div class="side-content js-side-content">
+    <iframe src="manage-content.html" frameborder="0" scrolling="auto" id="manage" name="manage"
+        onload="this.height=100" class="w-100">
+    </iframe>
+    <script type="text/javascript">
+        window.setInterval("reinitIframe('manage')", 2000);
+    </script>
+    <script type="text/javascript">
+        function reinitIframe(item) {
+                var iframe = document.getElementById(item);
+                try {
+                    var bHeight = iframe.contentWindow.document.body.scrollHeight;
+                    var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+                    var height = Math.max(bHeight, dHeight);
+                    iframe.height = height;
+                    console.log(height);
+                } catch (ex) { }
+            }
+    </script>
+</div>
+                <!--內容結束-->
+				</div>
+			</div>
+			
+		</body>
+</html>

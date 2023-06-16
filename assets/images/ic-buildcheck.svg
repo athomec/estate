@@ -1,0 +1,14 @@
+<svg id="ic-buildcheck" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="Group_69" data-name="Group 69">
+    <rect id="Rectangle_21" data-name="Rectangle 21" width="26" height="26" fill="none"/>
+  </g>
+  <g id="Group_71" data-name="Group 71" transform="translate(1.084 3.251)">
+    <g id="Group_70" data-name="Group 70">
+      <path id="Path_86" data-name="Path 86" d="M1,11.419V22.257H7.5V16.838H9.67v5.419h6.5V11.419L8.587,6Zm13.005,8.67H11.838V14.67h-6.5v5.419H3.168V12.535L8.587,8.666l5.419,3.869Z" transform="translate(-1 -2.749)" fill="#d5a285"/>
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="3" height="2" transform="translate(16.916 4.749)" fill="#d5a285"/>
+      <rect id="Rectangle_23" data-name="Rectangle 23" width="3" height="2" transform="translate(16.916 8.749)" fill="#d5a285"/>
+      <rect id="Rectangle_24" data-name="Rectangle 24" width="3" height="2" transform="translate(16.916 12.749)" fill="#d5a285"/>
+      <path id="Path_87" data-name="Path 87" d="M10,3V5.135l2.168,1.55V5.168h9.754V20.341H17.587v2.168h6.5V3Z" transform="translate(-0.246 -3)" fill="#d5a285"/>
+    </g>
+  </g>
+</svg>

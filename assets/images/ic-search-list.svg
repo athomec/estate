@@ -1,0 +1,8 @@
+<svg id="ic-search-list" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="Group_98" data-name="Group 98">
+    <path id="Path_110" data-name="Path 110" d="M0,0H28V28H0Z" fill="none"/>
+  </g>
+  <g id="Group_99" data-name="Group 99" transform="translate(2.351 6.937)">
+    <path id="Path_111" data-name="Path 111" d="M7.824,9.527H2V7.176H7.824Zm0,3.527H2V15.4H7.824Zm15.831,8.229-4.462-4.5a5.889,5.889,0,1,1,2.609-4.9,5.891,5.891,0,0,1-.967,3.233L25.3,19.625Zm-4.182-9.4A3.495,3.495,0,1,0,15.979,15.4,3.521,3.521,0,0,0,19.473,11.878ZM2,21.282H13.649V18.931H2Z" transform="translate(-2 -6)" fill="#d5a285"/>
+  </g>
+</svg>

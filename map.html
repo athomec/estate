@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>不動產盤點及現況使用調查系統</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="不動產盤點及現況使用調查系統,不動產盤點,不動產盤點及現況使用,調查系統">
+    <meta name="description" content="不動產盤點及現況使用調查系統" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="image.png" />
+    <meta property="og:image" content="./assets/images/fb-img.png" />
+    <!--分享設定-->
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/css/smoothness/jquery-ui-1.10.0.custom.min.css" />
+    <!--iconfont設定-->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!--css設定-->
+</head>
+<!-- SCRIPTS -->
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src='assets/js/jquery-ui.js'></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/footable.js"></script>
+<script src="assets/js/script.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".js-draggable").draggable();
+    });
+</script>
+		<body class="bg-gray100">
+			<div class="wrapper">
+				<header>
+				<!--主選單開始-->
+<nav class="navbar navbar-expand-md fixed-top js-nav">
+    <div class="container-fluid">
+        <div class="d-flex flex-column flex-md-row w-100">
+            <a class="navbar-brand me-2" href="index.html">
+                <h1 class="mb-0"><img src="./assets/images/logo-header.svg" alt="台中管理處"></h1>
+            </a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-3 me-xxl-4">
+                    <img src="./assets/images/ic-account-outline.svg" alt="登入" class="me-1">
+                    <p>臺中管理處財務組OO股 王曉明</p>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">登出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--主選單結束-->
+				</header>
+                <!--內容開始-->
+				<div class="d-flex vh-100">
+				<!-----側邊選單開始----->
+<div class="side-menu js-side-menu" id="side-menu">
+    <button class="btn side-menu-toggler js-side-menu-toggler js-map-inside-toggler" type="button">
+        <img src="./assets/images/ic-chevron-left.svg" alt="導引列表icon">
+    </button>
+    <div class="side-menu-body scroll">
+        <div class="accordion" id="accordionGroup">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        <img src="./assets/images/ic-landcheck.svg" alt="土地盤點" class="accordion-icon me-2"> 土地盤點
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
+                            <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
+                            <li><a href="manage.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
+                            <li><a href="#" class="accordion-link">組合式報表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <img src="./assets/images/ic-buildcheck.svg" alt="建物盤點" class="me-2 me-md-3"> 建物盤點
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
+                            <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
+                            <li><a href="manage.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
+                            <li><a href="#" class="accordion-link">組合式報表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <img src="./assets/images/ic-nowcheck.svg" alt="現況調查" class="me-2 me-md-3"> 現況調查
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
+                            <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
+                            <li><a href="manage.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
+                            <li><a href="#" class="accordion-link">組合式報表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" onclick="window.location.href = 'map.html'">
+                        <img src="./assets/images/ic-map.svg" alt="地圖查詢" class="me-2 me-md-3"> 地圖查詢
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        <img src="./assets/images/ic-backstage.svg" alt="後台功能" class="me-2 me-md-3"> 後台功能
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionGroup">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
+                            <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
+                            <li><a href="manage.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
+                            <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
+                            <li><a href="#" class="accordion-link">組合式報表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----側邊選單結束----->
+				<div class="side-content js-side-content p-0">
+    <div class="map-content-wrapper js-map-content-wrapper">
+        <div class="accordion map-content-list js-draggable">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <p class="accordion-txt">定位查詢</p>
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#locate"></button>
+                </h2>
+                <div id="locate" class="accordion-collapse collapse show">
+                    <button class="accordion-button accordion-subbutton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#locate1">
+                        地籍定位
+                    </button>
+                    <div id="locate1" class="accordion-collapse collapse show" data-bs-parent="#locate">
+                        <div class="accordion-body bg-secondary-light-color px-3 pt-2 pb-3">
+                            <label for="map-city" class="col-form-label">縣市</label>
+                            <select class="form-select mb-3" id="map-city">
+                                <option selected="">臺中市</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="map-township" class="col-form-label">鄉鎮</label>
+                            <select class="form-select mb-3" id="map-township">
+                                <option selected="">臺中市</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="map-lot" class="col-form-label">地段</label>
+                            <select class="form-select mb-3" id="map-lot">
+                                <option selected="">水源段</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="map-number" class="col-form-label">地號</label>
+                            <select class="form-select mb-3" id="map-number">
+                                <option selected="">123</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <button class="btn btn-dark-primary-color w-100">定位</button>
+                        </div>
+                    </div>
+                    <button class="accordion-button accordion-subbutton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#locate2">
+                        行政區定位
+                    </button>
+                    <div id="locate2" class="accordion-collapse collapse" data-bs-parent="#locate">
+                        <div class="accordion-body bg-secondary-light-color px-3 pt-2 pb-3">
+                            <label for="district-city" class="col-form-label">縣市</label>
+                            <select class="form-select mb-3" id="district-city">
+                                <option selected="">臺中市</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="district-township" class="col-form-label">鄉鎮</label>
+                            <select class="form-select mb-3" id="district-township">
+                                <option selected="">臺中市</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="district-village" class="col-form-label">村里</label>
+                            <select class="form-select mb-3" id="district-village">
+                                <option selected="">新北里</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <button class="btn btn-dark-primary-color w-100">定位</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion map-content-list js-draggable" data-con="layer">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <p class="accordion-txt">圖層清單</p>
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#layer"></button>
+                </h2>
+
+                <div id="layer" class="accordion-collapse collapse show">
+                    <div class="accordion-body p-3">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="layer-city">
+                            <label class="form-check-label" for="layer-city">
+                                縣市界
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="layer-township">
+                            <label class="form-check-label" for="layer-township">
+                                鄉鎮市區界
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="layer-station">
+                            <label class="form-check-label" for="layer-station">
+                                工作站
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="layer-team">
+                            <label class="form-check-label" for="layer-team">
+                                水利小組
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="layer-way">
+                            <label class="form-check-label" for="layer-way">
+                                渠道
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="layer-object">
+                            <label class="form-check-label" for="layer-object">
+                                水工構造物
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-content js-map-content">
+            <img src="./assets/images/map-demo.jpg" alt="地圖" style="width: 100%;height: 100%;">
+        </div>
+    </div>
+</div>
+
+                <!--內容結束-->
+				</div>
+			</div>
+			
+		</body>
+</html>
