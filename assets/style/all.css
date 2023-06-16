@@ -12781,7 +12781,8 @@ body {
       .side-menu-toggler {
         width: 24px;
         right: -24px;
-        height: 56px; } }
+        height: 56px;
+        top: 130px; } }
     .side-menu-toggler:hover {
       background: #DDB49D; }
     .side-menu-toggler img {
@@ -12879,7 +12880,11 @@ body {
   @media (max-width: 767px) {
     .side-content {
       width: 100%;
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-top: 70px; } }
+  @media (max-width: 576px) {
+    .side-content {
+      margin-top: 60px; } }
   .side-content.close {
     width: 100%;
     margin-left: 0; }
@@ -13461,10 +13466,14 @@ textarea.form-control {
       .login-btn {
         height: auto;
         height: 55px; } }
-    @media (max-width: 576px) {
+    @media (max-width: 767px) {
       .login-btn {
         font-size: 1.3rem;
         height: 50px; } }
+    @media (max-width: 576px) {
+      .login-btn {
+        font-size: 1.125rem;
+        height: 40px; } }
   .login input {
     border-radius: 10px;
     border: none;
@@ -13481,6 +13490,7 @@ textarea.form-control {
         height: 50px; } }
     @media (max-width: 767px) {
       .login input {
+        height: 40px;
         font-size: 1rem; } }
     .login input[data-con="account"] {
       background: url("../images/ic-account.svg") no-repeat left center #fff;
@@ -13567,12 +13577,18 @@ textarea.form-control {
     @media (max-width: 767px) {
       .login-brand {
         font-size: 0.9rem; } }
+    @media (max-width: 576px) {
+      .login-brand {
+        font-size: 0.8rem; } }
     .login-brand img {
       width: 30px;
       margin-right: 0.75rem; }
       @media (max-width: 1200px) {
         .login-brand img {
           width: 25px; } }
+      @media (max-width: 576px) {
+        .login-brand img {
+          width: 20px; } }
 
 .captcha {
   height: 55px; }
