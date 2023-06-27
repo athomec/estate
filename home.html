@@ -29,6 +29,10 @@
     $(function () {
         $(".js-draggable").draggable();
     });
+    function changeIframeSrc(url) {
+            var iframe = document.getElementsByName('home')[0];
+            iframe.src = url;
+        }
 </script>
 		<body class="bg-gray100">
 			<div class="wrapper">
@@ -75,7 +79,7 @@
                         <ul>
                             <li><a href="#" class="accordion-link">資料批次匯入暫存區</a></li>
                             <li><a href="#" class="accordion-link">資料轉入正式區</a></li>
-                            <li><a href="home.html" class="accordion-link">盤點紀錄管理</a></li>
+                            <li><a href="manage.html" class="accordion-link" target="home">盤點紀錄管理</a></li>
                             <li><a href="#" class="accordion-link">地籍總歸戶帳物不符管理</a></li>
                             <li><a href="#" class="accordion-link">實地盤點帳物不符管理</a></li>
                             <li><a href="#" class="accordion-link">報表查詢&清冊產製</a></li>
@@ -128,8 +132,7 @@
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" onclick="window.location.href = 'map.html'">
+                    <button class="accordion-button collapsed js-map-opener" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" onclick="changeIframeSrc('map.html')">
                         <img src="./assets/images/ic-map.svg" alt="地圖查詢" class="me-2 me-md-3"> 地圖查詢
                     </button>
                 </h2>
@@ -161,120 +164,26 @@
     </div>
 </div>
 <!-----側邊選單結束----->
-				<div class="side-content js-side-content">
-    <div class="side-content-header">
-        <h2 class="title mb-4">盤點紀錄編輯<span>當前地號 0003-0000</span></h2>
-        <nav">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="home.html" class="breadcrumb-link">土地盤點</a></li>
-                <li class="breadcrumb-item"><a href="home.html" class="breadcrumb-link">盤點紀錄管理</a></li>
-                <li class="breadcrumb-item active">盤點紀錄編輯</li>
-            </ol>
-            </nav>
-    </div>
-    <div class="content-box-nav">
-        <ul class="nav nav-tabs scrollbar" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#check1" type="button" role="tab"><img src="./assets/images/ic-info.svg">基本資料管理</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#check2" type="button" role="tab"><img src="./assets/images/ic-folder.svg">地籍總歸戶盤點結果</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#check3" type="button" role="tab"><img src="./assets/images/ic-search-list.svg">實地盤點結果</button>
-              </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#check4" type="button" role="tab"><img src="./assets/images/ic-add-photo.svg">照片上傳</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#check5" type="button" role="tab"><img src="./assets/images/ic-upload.svg">檔案上傳</button>
-            </li>
-          </ul>
-    </div>
-    <div class="content-box py-4 py-lg-5 px-4 px-lg-5" data-con="edit">
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="check1" role="tabpanel">
-                <div class="row g-3">
-                    <div class="col-md-6 col-xxl-3 d-flex">
-                        <label for="edit-year" class="col-form-label flex-shrink-0 me-3" style="width:100px">盤點年度</label>
-                        <select class="form-select" id="edit-year">
-                            <option selected>112</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 col-xxl-3 d-flex">
-                        <label for="edit-city" class="col-form-label flex-shrink-0 me-3">縣市</label>
-                        <select class="form-select" id="edit-city">
-                            <option selected>臺中市</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 col-xxl-3 d-flex">
-                        <label for="edit-township" class="col-form-label flex-shrink-0 me-3">鄉鎮市區</label>
-                        <select class="form-select" id="edit-township">
-                            <option selected>中區</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 col-xxl-3 d-flex">
-                        <label for="edit-lot" class="col-form-label flex-shrink-0 me-3">地段</label>
-                        <select class="form-select" id="edit-lot">
-                            <option selected>繼光段六小段</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 col-xxl-3 d-flex">
-                        <label for="edit-number" class="col-form-label flex-shrink-0 me-3" style="width:100px">地號</label>
-                        <select class="form-select" id="edit-number">
-                            <option selected>0003-0000</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 col-xxl-9 d-flex">
-                        <label for="property-number" class="col-form-label flex-shrink-0 me-3">財產編號</label>
-                        <select class="form-select" id="property-number">
-                            <option selected>請選擇</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <label for="property-division" class="col-form-label flex-shrink-0 me-3" style="width:100px">財產區分</label>
-                        <input type="text" class="form-control" value="111臺中農田水利事業作業基金" id="property-division">
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="d-flex w-100 mb-3 mb-md-0">
-                            <label for="area" class="col-form-label flex-shrink-0 me-3" style="width:100px">國有權利面積</label>
-                            <input type="text" class="form-control" value="751.00" id="area">
-                        </div>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <button class="btn btn-dark-primary-color me-3 flex-shrink-0 ms-auto px-4">
-                            <img src="./assets/images/ic-back.svg">取消
-                        </button>
-                        <button class="btn btn-dark-primary-light-color flex-shrink-0 px-4">
-                            <img src="./assets/images/ic-save.svg">儲存
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="check2" role="tabpanel">地籍總歸戶盤點結果</div>
-            <div class="tab-pane fade" id="check3" role="tabpanel">實地盤點結果</div>
-            <div class="tab-pane fade" id="check4" role="tabpanel">照片上傳</div>
-            <div class="tab-pane fade" id="check5" role="tabpanel">檔案上傳</div>
-          </div>
-    </div>
+				
+<div class="side-content js-side-content">
+    <iframe src="manage.html" frameborder="0" scrolling="auto" id="home" name="home"
+        onload="this.height=100" class="js-iframe w-100">
+    </iframe>
+    <script type="text/javascript">
+        window.setInterval("reinitIframe('home')", 1000);
+    </script>
+    <script type="text/javascript">
+        function reinitIframe(item) {
+                var iframe = document.getElementById(item);
+                try {
+                    var bHeight = iframe.contentWindow.document.body.scrollHeight;
+                    var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+                    var height = Math.max(bHeight, dHeight);
+                    iframe.height = height;
+                    console.log(height);
+                } catch (ex) { }
+            }
+    </script>
 </div>
                 <!--內容結束-->
 				</div>

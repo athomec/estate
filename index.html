@@ -64,7 +64,7 @@
 				</div>
 				<div class="d-grid">
 					<button class="login-btn btn btn-dark-primary-light-color rounded py-2 mb-4 mb-lg-5" type="button"
-						onclick="location.href='manage.html';">
+						onclick="location.href='home.html';">
 						登入
 					</button>
 				</div>
@@ -88,6 +88,10 @@
     $(function () {
         $(".js-draggable").draggable();
     });
+    function changeIframeSrc(url) {
+            var iframe = document.getElementsByName('home')[0];
+            iframe.src = url;
+        }
 </script>
 		</body>
 </html>

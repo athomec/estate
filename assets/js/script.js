@@ -23,6 +23,19 @@ $(function () {//JS開頭
 
 	$(".js-draggable").draggable();
 
+	
+	$(".js-side-menu button").not(".js-side-menu-toggler").click(function () {
+		if ($(this).hasClass("js-map-opener")){
+			$(".js-side-content").addClass("p-0");
+			$(".js-iframe").addClass("iframe-map-height");
+			$("body").addClass("scrolly-none");
+		}
+	})
+	$(".js-side-menu a").click(function () {
+			$(".js-side-content").removeClass("p-0");
+			$(".js-iframe").removeClass("iframe-map-height");
+			$("body").removeClass("scrolly-none");
+	})
 	RESIZE();
 
 	function RESIZE() {
