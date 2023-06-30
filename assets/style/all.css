@@ -12920,17 +12920,6 @@ body {
     padding: 0.5rem 0.5rem 0 0.5rem; }
 
 /*------------------地圖區塊開始--------------------*/
-.map-content-wrapper {
-  overflow: hidden;
-  display: flex;
-  transition: all 0.2s ease;
-  justify-content: space-between;
-  position: relative;
-  height: 100vh; }
-  @media (max-width: 576px) {
-    .map-content-wrapper {
-      flex-direction: column; } }
-
 .iframe-map-height {
   height: calc(100vh - 61px); }
   @media (max-width: 1400px) {
