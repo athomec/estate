@@ -29,22 +29,14 @@ $(function () {//JS開頭
 			$(".js-side-content").addClass("p-0");
 			$(".js-iframe").addClass("iframe-map-height");
 			$("body").addClass("scrolly-none");
-			open_map_menu();
 		}
 	})
 	$(".js-side-menu a").click(function () {
 			$(".js-side-content").removeClass("p-0");
 			$(".js-iframe").removeClass("iframe-map-height");
 			$("body").removeClass("scrolly-none");
-		close_map_menu()
 	})
 
-	function open_map_menu(){
-		$(".js-map-content-list").removeClass("d-none")
-	}
-	function close_map_menu() {
-		$(".js-map-content-list").addClass("d-none")
-	}
 	RESIZE();
 
 	function RESIZE() {
