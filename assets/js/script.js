@@ -38,11 +38,8 @@ $(function () {//JS開頭
 	})
 
 	RESIZE();
-	
 	if (WINDOW < 768) {
-		$(".js-export-form-content").removeClass("show");
-	} else {
-		$(".js-export-form-content").addClass("show");
+		$(".js-export-form-title").click();
 	}
 
 	function RESIZE() {
@@ -52,6 +49,10 @@ $(function () {//JS開頭
 			$('.js-side-menu').addClass("close");
 			$(".js-side-content").addClass("close");
 		}
+		if (WINDOW > 768) {
+			$(".js-export-form-content").addClass("show");
+		}
+
 	}
 	$(window).resize(function () {
 		RESIZE();
