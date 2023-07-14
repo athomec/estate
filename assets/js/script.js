@@ -38,6 +38,12 @@ $(function () {//JS開頭
 	})
 
 	RESIZE();
+	
+	if (WINDOW < 768) {
+		$(".js-export-form-content").removeClass("show");
+	} else {
+		$(".js-export-form-content").addClass("show");
+	}
 
 	function RESIZE() {
 		var WINDOW = $(window).width();
@@ -46,12 +52,6 @@ $(function () {//JS開頭
 			$('.js-side-menu').addClass("close");
 			$(".js-side-content").addClass("close");
 		}
-		if (WINDOW < 768) {
-			$(".js-export-form-content").removeClass("show");
-		} else {
-			$(".js-export-form-content").addClass("show");
-		}
-
 	}
 	$(window).resize(function () {
 		RESIZE();
