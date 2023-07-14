@@ -9062,6 +9062,13 @@ input::placeholder, textarea::placeholder {
     .link-special-color:hover img {
       filter: brightness(0.8); }
 
+.link-special-light-color {
+  color: #EAF3FA; }
+  .link-special-light-color:hover {
+    color: #98c4e6; }
+    .link-special-light-color:hover img {
+      filter: brightness(0.8); }
+
 .link-bright-color {
   color: #FFF892; }
   .link-bright-color:hover {
@@ -9270,6 +9277,9 @@ input::placeholder, textarea::placeholder {
 
 .special-color {
   color: #95C2E6 !important; }
+
+.special-light-color {
+  color: #EAF3FA !important; }
 
 .bright-color {
   color: #FFF892 !important; }
@@ -9483,6 +9493,9 @@ input::placeholder, textarea::placeholder {
 
 .bg-special-color {
   background: #95C2E6 !important; }
+
+.bg-special-light-color {
+  background: #EAF3FA !important; }
 
 .bg-bright-color {
   background: #FFF892 !important; }
@@ -9713,6 +9726,27 @@ input::placeholder, textarea::placeholder {
   .btn-dark-special-color img {
     margin-right: 4px; }
   .btn-dark-special-color img {
+    width: 20px; }
+
+.btn-dark-special-light-color {
+  color: #fff !important;
+  background: #EAF3FA !important;
+  border: 1px solid #EAF3FA;
+  padding: 4px 16px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 767px) {
+    .btn-dark-special-light-color {
+      font-size: 0.95rem; } }
+  .btn-dark-special-light-color:hover {
+    color: #fff !important;
+    filter: brightness(80%) contrast(180%); }
+  .btn-dark-special-light-color img {
+    margin-right: 4px; }
+  .btn-dark-special-light-color img {
     width: 20px; }
 
 .btn-dark-bright-color {
@@ -10358,6 +10392,37 @@ input::placeholder, textarea::placeholder {
     left: -2px;
     top: -2px;
     border: 2px solid #95C2E6;
+    border-radius: 0.5rem;
+    transform: scale(1.2);
+    opacity: 0; }
+
+.btn-border-special-light-color {
+  color: #EAF3FA !important;
+  background: #fff !important;
+  border: 2px solid #e0e0e0;
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 3px 1rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .btn-border-special-light-color img {
+    margin-right: 0.3rem; }
+  .btn-border-special-light-color:hover {
+    color: #fff; }
+    .btn-border-special-light-color:hover::after {
+      transform: scale(1);
+      opacity: 1; }
+  .btn-border-special-light-color::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    left: -2px;
+    top: -2px;
+    border: 2px solid #EAF3FA;
     border-radius: 0.5rem;
     transform: scale(1.2);
     opacity: 0; }
@@ -11177,6 +11242,9 @@ input::placeholder, textarea::placeholder {
 .bd-special-color {
   border-color: #95C2E6 !important; }
 
+.bd-special-light-color {
+  border-color: #EAF3FA !important; }
+
 .bd-bright-color {
   border-color: #FFF892 !important; }
 
@@ -11310,7 +11378,7 @@ input::placeholder, textarea::placeholder {
 
 .subtitle {
   display: flex;
-  color: #9F765C;
+  color: #525252;
   position: relative;
   font-size: 1.125rem; }
   @media (max-width: 991px) {
@@ -11765,6 +11833,10 @@ input::placeholder, textarea::placeholder {
 .table-bd-special-color td {
   border-color: #95C2E6; }
 
+.table-bd-special-light-color th,
+.table-bd-special-light-color td {
+  border-color: #EAF3FA; }
+
 .table-bd-bright-color th,
 .table-bd-bright-color td {
   border-color: #FFF892; }
@@ -11971,7 +12043,7 @@ input::placeholder, textarea::placeholder {
     width: 4px;
     height: 4px;
     border-radius: 10px;
-    background-color: #9F765C;
+    background-color: #D5A285;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     opacity: 0; }
@@ -11979,7 +12051,7 @@ input::placeholder, textarea::placeholder {
     border-radius: 10px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    background-color: #9F765C;
+    background-color: #D5A285;
     opacity: 0; }
 
 .scrollx-none {
@@ -12774,9 +12846,6 @@ textarea.form-control {
 body {
   font-family: Noto Sans TC, 微軟正黑體; }
 
-.wrapper {
-  min-height: 100vh; }
-
 /*--------------------主選單開始------------------*/
 .navbar {
   background: #D5A285;
@@ -13019,6 +13088,20 @@ body {
     background: #F2E3DA;
     border-radius: 0.75rem 0.75rem 0 0;
     padding: 0.5rem 0.5rem 0 0.5rem; }
+
+.content-edit {
+  border-radius: 0 0 0.75rem 0.75rem; }
+  .content-edit .form-select,
+  .content-edit .form-control {
+    background-color: #fff; }
+  .content-edit .btn {
+    height: 38px; }
+  @media (max-width: 1400px) {
+    .content-edit .col-form-label {
+      width: 100px; } }
+  @media (max-width: 767px) {
+    .content-edit .col-form-label {
+      width: 95px !important; } }
 
 /*------------------地圖區塊開始--------------------*/
 .iframe-map-height {
@@ -13783,6 +13866,113 @@ footer {
       @media (max-width: 576px) {
         .page-slide-action .btn {
           width: 125px; } }
+
+.export-form {
+  display: flex;
+  align-items: stretch; }
+  @media (max-width: 991px) {
+    .export-form {
+      flex-wrap: wrap; } }
+  @media (max-width: 767px) {
+    .export-form {
+      flex-direction: column; } }
+  .export-form-item {
+    background: #fff;
+    border: 1px solid #e0e0e0 !important;
+    width: 100%; }
+    @media (max-width: 991px) {
+      .export-form-item {
+        width: 33.33%; }
+        .export-form-item:last-child {
+          width: 100%; } }
+    @media (max-width: 767px) {
+      .export-form-item {
+        width: 100%; } }
+  .export-form-title {
+    color: #9F765C !important;
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0;
+    display: flex;
+    border-bottom: 3px solid #D5A285 !important;
+    justify-content: center;
+    pointer-events: none;
+    position: relative; }
+    @media (max-width: 767px) {
+      .export-form-title {
+        pointer-events: inherit; } }
+    .export-form-title ~ .show .accordion-body {
+      padding-bottom: 1rem; }
+      @media (max-width: 767px) {
+        .export-form-title ~ .show .accordion-body {
+          padding-bottom: 0.75rem; } }
+    .export-form-title:after {
+      display: none;
+      background: url("../images/ic-arrow.svg") no-repeat center;
+      width: 16px;
+      height: 16px;
+      transition: all 0.2s ease; }
+      @media (max-width: 767px) {
+        .export-form-title:after {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 5px; } }
+    .export-form-title:not(.collapsed)::after {
+      background: url("../images/ic-arrow.svg") no-repeat center;
+      transform: rotate(180deg); }
+  .export-form-check {
+    margin-bottom: 0.3rem;
+    position: relative;
+    padding-left: 0; }
+  .export-form-function {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem; }
+    @media (max-width: 991px) {
+      .export-form-function {
+        width: 100%;
+        flex-direction: row;
+        padding: 1rem 0; } }
+  .export-form-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .export-form-btn:first-child {
+      margin-bottom: 1rem; }
+      @media (max-width: 991px) {
+        .export-form-btn:first-child {
+          margin-right: 1rem;
+          margin-bottom: 0;
+          transform: rotate(90deg); } }
+    @media (max-width: 991px) {
+      .export-form-btn:last-child {
+        transform: rotate(90deg); } }
+    .export-form-btn img {
+      margin: 0; }
+  .export-form .form-check-label {
+    font-size: 0.95rem;
+    background: #FAF8ED;
+    padding: 2px 0.75rem 2px 2rem;
+    width: 100%; }
+  .export-form .form-check-input {
+    margin-left: 0;
+    position: absolute;
+    left: 10px;
+    top: 1px; }
+  .export-form .form-check-input[type="checkbox"] {
+    border-radius: 2px;
+    border: none !important;
+    background: #E8DEC5; }
+  .export-form .form-check-input:checked[type="checkbox"] {
+    background: url("../images/ic-check.svg") no-repeat center #95C2E6;
+    background-size: 10px; }
+  .export-form .form-check-input:checked[type="checkbox"] ~ .form-check-label {
+    background: #EAF3FA; }
 
 /*
 * FooTable v3 - FooTable is a jQuery plugin that aims to make HTML tables on smaller devices look awesome.

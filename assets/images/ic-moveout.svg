@@ -1,0 +1,11 @@
+<svg id="ic-moveout" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_117" data-name="Group 117">
+    <rect id="Rectangle_68" data-name="Rectangle 68" width="24" height="24" fill="none"/>
+  </g>
+  <g id="Group_119" data-name="Group 119" transform="translate(3.5 5)">
+    <g id="Group_118" data-name="Group 118">
+      <path id="Path_126" data-name="Path 126" d="M16,5h4.5l-5,7,5,7H16l-5-7Z" transform="translate(-11 -5)" fill="#fff"/>
+      <path id="Path_127" data-name="Path 127" d="M9,5h4.5l-5,7,5,7H9L4,12Z" transform="translate(3 -5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
