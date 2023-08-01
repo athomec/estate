@@ -13192,6 +13192,9 @@ body {
     .content-edit .col-form-label {
       width: 95px !important; } }
 
+[readonly]:focus {
+  border-color: #E8DEC5 !important; }
+
 /*------------------地圖區塊開始--------------------*/
 .iframe-map-height {
   height: calc(100vh - 61px); }
