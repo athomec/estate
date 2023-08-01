@@ -36,7 +36,50 @@
 	<body class="bg-gray100">
 		<div class="wrapper">
 			<!--內容開始-->
-			
+			<!---視窗開始--->
+<div class="modal fade" id="filter" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5"><div class="modal-title-icon"><img src="./assets/images/ic-filter.svg"></div>  條件篩選</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex mb-3">
+                    <label for="edit-city" class="col-form-label flex-shrink-0 me-2">縣市</label>
+                    <select class="form-select" id="edit-city">
+                        <option selected>臺中市</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="d-flex mb-3">
+                    <label for="edit-township" class="col-form-label flex-shrink-0 me-2">鄉鎮市區</label>
+                    <select class="form-select" id="edit-township">
+                        <option selected>中區</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="d-flex mb-3">
+                    <label for="edit-lot" class="col-form-label flex-shrink-0 me-2">地段</label>
+                    <select class="form-select" id="edit-lot">
+                        <option selected>繼光段六小段</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <button class="btn btn-dark-primary-light-color px-2 w-100" data-bs-dismiss="modal">
+                    查詢
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!---視窗結束--->
 <div class="side-content-header">
     <h2 class="title mb-4">盤點紀錄編輯<span>當前地號 0003-0000</span></h2>
     <nav">
@@ -75,41 +118,53 @@
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="check1" role="tabpanel">
             <div class="row g-3">
-                <div class="col-md-6 col-xxl-3 d-flex">
-                    <label for="edit-year" class="col-form-label flex-shrink-0 me-3" style="width:100px">盤點年度</label>
-                    <select class="form-select" id="edit-year">
-                        <option selected>112</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="col-md-6 col-xxl-3 d-flex">
-                    <label for="edit-city" class="col-form-label flex-shrink-0 me-3">縣市</label>
-                    <select class="form-select" id="edit-city">
-                        <option selected>臺中市</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="col-md-6 col-xxl-3 d-flex">
-                    <label for="edit-township" class="col-form-label flex-shrink-0 me-3">鄉鎮市區</label>
-                    <select class="form-select" id="edit-township">
-                        <option selected>中區</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="col-md-6 col-xxl-3 d-flex">
-                    <label for="edit-lot" class="col-form-label flex-shrink-0 me-3">地段</label>
-                    <select class="form-select" id="edit-lot">
-                        <option selected>繼光段六小段</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                <div class="col-12 d-flex">
+                    <label for="edit-year" class="col-form-label flex-shrink-0 mt-xl-2 me-3" style="width:100px">盤點年度</label>
+                    <div class="d-flex flex-wrap flex-xl-nowrap align-items-center w-100">
+                        <select class="form-select me-xl-3 mb-3 mb-xl-0" id="edit-year">
+                            <option selected>112</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="container-fluid form-inline-group px-1">
+                            <div class="row bg-soft-color rounded px-3 py-4 py-lg-2 gx-2">
+                                <div class="col-lg-3 d-flex flex-column flex-sm-row mb-3 mb-lg-0">
+                                    <label for="edit-city" class="col-form-label flex-shrink-0 me-2">縣市</label>
+                                    <select class="form-select" id="edit-city">
+                                        <option selected>臺中市</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 d-flex flex-column flex-sm-row mb-3 mb-lg-0">
+                                    <label for="edit-township" class="col-form-label flex-shrink-0 me-2">鄉鎮市區</label>
+                                    <select class="form-select" id="edit-township">
+                                        <option selected>中區</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 d-flex flex-column flex-sm-row mb-3 mb-lg-0">
+                                    <label for="edit-lot" class="col-form-label flex-shrink-0 me-2">地段</label>
+                                    <select class="form-select" id="edit-lot">
+                                        <option selected>繼光段六小段</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 d-flex">
+                                    <button class="btn btn-dark-primary-light-color flex-shrink-0 px-2 w-100 mx-auto" style="max-width: 150px;" data-bs-toggle="modal" data-bs-target="#filter">
+                                        條件篩選
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="col-md-6 col-xxl-3 d-flex">
                     <label for="edit-number" class="col-form-label flex-shrink-0 me-3" style="width:100px">地號</label>
