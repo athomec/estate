@@ -304,9 +304,19 @@
                 <img src="./assets/images/ic-moveout.svg" alt="移出">
             </button>
         </div>
-        <div class="export-form-item p-3">
+        <div class="export-form-item p-3 position-relative">
             <h4 class="export-form-title">產製欄位</h4>
-            <div class="scrollbar-primary" style="max-height: 247px;">
+            <ul class="export-form-order">
+                <li>
+                    <button class="btn btn-dark-primary-light-color export-form-order-btn mb-2">
+                        <img src="./assets/images/ic-arrow-up.svg" alt="往上排序">
+                    </button>
+                    <button class="btn btn-dark-primary-light-color export-form-order-btn">
+                        <img src="./assets/images/ic-arrow-down.svg" alt="往下排序">
+                    </button>
+                </li>
+            </ul>
+            <div class="scrollbar-primary pe-5" style="max-height: 247px;">
                 <div class="export-form-check form-check">
                     <input class="form-check-input" type="checkbox" id="list25">
                     <label class="form-check-label" for="list25">
