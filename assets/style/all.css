@@ -12925,13 +12925,31 @@ body {
   color: #fff; }
   .navbar-brand {
     width: 100%;
-    max-width: 620px; }
-    @media (max-width: 1400px) {
-      .navbar-brand {
-        max-width: 450px; } }
-    @media mobile-md {
-      .navbar-brand {
-        max-width: 300px; } }
+    color: #fff !important;
+    padding: 0; }
+    .navbar-brand img {
+      height: 45px; }
+      @media (max-width: 1400px) {
+        .navbar-brand img {
+          height: 38px; } }
+      @media (max-width: 485px) {
+        .navbar-brand img {
+          height: 30px; } }
+    .navbar-brand h1 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      display: flex;
+      align-items: center; }
+      @media (max-width: 1400px) {
+        .navbar-brand h1 {
+          font-size: 1.125rem; } }
+      @media (max-width: 991px) {
+        .navbar-brand h1 {
+          font-size: 0.9rem; } }
+      @media (max-width: 485px) {
+        .navbar-brand h1 {
+          font-size: 0.8rem;
+          letter-spacing: -0.5px; } }
   .navbar-collapse {
     position: absolute;
     width: 100%;
